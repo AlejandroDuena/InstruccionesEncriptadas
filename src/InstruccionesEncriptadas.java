@@ -4,18 +4,17 @@ import java.util.Scanner;
 public class InstruccionesEncriptadas {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String Ins = "";
-        File archivo;
-        FileReader fr = null;
-        BufferedReader br = null;
         FileWriter fichero = null;
-        PrintWriter pw = null;
+        PrintWriter pw;
+        String instruc1 = "";
+        String instruc2 = "";
+        /*Scanner sc = new Scanner(System.in);
+        File archivo;
+        FileWriter fichero = null;
+        PrintWriter pw;
 
         try {
             archivo = new File("instrucciones.txt");
-            fr = new FileReader(archivo);
-            br = new BufferedReader(fr);
             int m1 = 0, m2 = 0;
             int n = 0;
             String instruc1 = "";
@@ -51,7 +50,7 @@ public class InstruccionesEncriptadas {
                         instruc2 = "NO";
                     }
                 }
-            }
+            }*/
             try{
                 fichero = new FileWriter("resultados.txt");
                 pw = new PrintWriter(fichero);
@@ -67,8 +66,5 @@ public class InstruccionesEncriptadas {
                     e2.printStackTrace();
                 }
             }
-        } catch (Exception e){
-            e.printStackTrace();
         }
     }
-}
