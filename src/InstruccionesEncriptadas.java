@@ -3,15 +3,11 @@ import java.util.Scanner;
 
 public class InstruccionesEncriptadas {
 
-    public static void main(String[] args) {
-        FileWriter fichero = null;
+   public static void main(String[] args) {
+        /*FileWriter fichero = null;
         PrintWriter pw;
-        String instruc1 = "";
-        String instruc2 = "";
-        /*Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         File archivo;
-        FileWriter fichero = null;
-        PrintWriter pw;
 
         try {
             archivo = new File("instrucciones.txt");
@@ -32,39 +28,42 @@ public class InstruccionesEncriptadas {
             if ((n >= 3 && n <= 5000) && (m1 >= 2 && m1 <= 50) && (m2 >= 2 && m2 <= 50)) {
                 int i = 0;
                 int j = 0;
-                while (i < mensaje.length() && j < instruc1.length()){
+                while (i < mensaje.length() && j < instruc1.length()) {
                     i++;
                     j++;
-                    if(j == instruc1.length()){
+                    if (j == instruc1.length()) {
                         instruc1 = "SI";
-                    }else {
+                    } else {
                         instruc1 = "NO";
                     }
                 }
-                while(i < mensaje.length() && j < instruc2.length()){
+                while (i < mensaje.length() && j < instruc2.length()) {
                     i++;
                     j++;
-                    if(j == instruc2.length()){
+                    if (j == instruc2.length()) {
                         instruc2 = "SI";
-                    }else {
+                    } else {
                         instruc2 = "NO";
                     }
                 }
-            }*/
-            try{
-                fichero = new FileWriter("resultados.txt");
-                pw = new PrintWriter(fichero);
-                pw.println(instruc1);
-                pw.println(instruc2);
-            } catch (Exception e){
-                e.printStackTrace();
-            }finally {
-                try{
-                    if(null != fichero);
-                    fichero.close();
-                }catch (Exception e2){
-                    e2.printStackTrace();
+                try {
+                    fichero = new FileWriter("resultados.txt");
+                    pw = new PrintWriter(fichero);
+                    pw.println(instruc1);
+                    pw.println(instruc2);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    try {
+                        if (null != fichero) ;
+                        fichero.close();
+                    } catch (Exception e2) {
+                        e2.printStackTrace();
+                    }
                 }
             }
-        }
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }*/
     }
+}
