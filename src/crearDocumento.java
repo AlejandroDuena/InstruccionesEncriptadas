@@ -4,12 +4,11 @@ import java.io.PrintWriter;
 public class crearDocumento {
     public static void main(String[] args) {
         Verificador ver = new Verificador();
-        ver.mostrarResultados();
-        /*String instruc1 = ver.getInstruc_1();
-        String instruc2 = ver.getInstruc_2();
+        //ver.mostrarResultados();
+        String instruc1 = ver.instruc1();
+        String instruc2 = ver.instruc2();
         FileWriter fichero = null;
         PrintWriter pw;
-
         try {
             fichero = new FileWriter("resultados.txt");
             pw = new PrintWriter(fichero);
@@ -24,6 +23,6 @@ public class crearDocumento {
             } catch (Exception e2) {
                 e2.printStackTrace();
             }
-        }*/
+        }
     }
 }

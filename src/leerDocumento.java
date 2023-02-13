@@ -49,7 +49,6 @@ import java.util.Scanner;
      public void setCaractInstruccion_uno (int caractInstruc1){
          this.caractInstruc1 = caractInstruc1;
      }
-
      public void setCaractInstruccion_dos (int caractInstruc2) {
          this.caractInstruc2 = caractInstruc2;
      }
