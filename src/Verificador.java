@@ -61,21 +61,4 @@ public class Verificador {
         }
         return instruc_2;
     }
-    /*private static boolean caractDuplicado (String input) {
-        for (int interaccionInput = 0; interaccionInput < input.length()-1; interaccionInput++){
-            if (input.charAt(interaccionInput) == input.charAt(interaccionInput + 1)){
-                return false;
-            }
-        }
-        return true;
-    }
-    private static boolean validarCaracteresEspeciales(String mensaje) {
-        String caractValidos = "[a-zA-Z0-9]";
-        String vaidarMensaje = mensaje.replaceAll(caractValidos, "");
-        if (mensaje.equals(vaidarMensaje)){
-            return true;
-        }else {
-            return false;
-        }
-    }*/
 }

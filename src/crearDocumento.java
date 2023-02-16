@@ -20,7 +20,9 @@ public class crearDocumento {
             try {
                 if (null != fichero) ;
                 fichero.close();
-            } catch (Exception e2) {
+
+                exceptions.verificadorIns(); }
+            catch (Exception e2) {
                 e2.printStackTrace();
             }
         }

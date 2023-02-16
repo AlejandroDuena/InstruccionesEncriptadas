@@ -11,9 +11,11 @@ import java.util.Scanner;
      private String instruc_dos;
      private String mensaje;
 
+
         Scanner sc = new Scanner(System.in);
 
         File archivo;
+
      {
          archivo = new File("instrucciones.txt");
          int m1 = 0;
@@ -38,11 +40,8 @@ import java.util.Scanner;
              mensaje = sc.next();
              setMensaje(mensaje);
 
-
          } catch (FileNotFoundException e) {
-
-             throw new RuntimeException(e);
-
+             System.out.println("Error a leer los datos, por favor verificar que el formato sea correcto.");
          }
      }
 
